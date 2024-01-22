@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch,useSelector } from 'react-redux'
 import { signInSuccess,signInStart,signInFailure } from "../redux/user/userSlice";
+import OAuth from "../components/OAuth";
 
 export default function Signin() {
     const naviget = useNavigate();
@@ -57,6 +58,7 @@ export default function Signin() {
                         <Button gradientDuoTone='purpleToPink' type="submit" disabled={loding}>{loding ? (
                             <> <Spinner size='sm' /><span className="pl-3">Loding</span></>
                         ) : 'Sign In'}</Button>
+                        <OAuth />
                     </form>
                     <div className="flex gap-2 text-sm mt-5">
                         <span>Dont Have an account?</span>
