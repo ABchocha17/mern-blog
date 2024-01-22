@@ -10,7 +10,7 @@ const signup = async (req, resp, next) => {
 
     const hashedpassword = bcryptjs.hashSync(password, 10)
     const user = new User({ username, email, password: hashedpassword })
-
+    console.log("yes");
     try {
         await user.save();
         resp.json({ message: "Signup successful" })
