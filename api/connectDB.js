@@ -2,8 +2,8 @@ import mongoose from "mongoose";
 
 async function connectDB() {
     try {
-        // const conn = await mongoose.connect('mongodb+srv://arvind:arvind@mern.xtmjpfc.mongodb.net/mern-blog?retryWrites=true&w=majority');
-        const conn = await mongoose.connect('mongodb://localhost:27017/mern', {
+        const conn = await mongoose.connect('mongodb+srv://arvind:arvind@mern.xtmjpfc.mongodb.net/mern-blog?retryWrites=true&w=majority',{
+        // const conn = await mongoose.connect('mongodb://localhost:27017/mern', {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         });

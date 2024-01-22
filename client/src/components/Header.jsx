@@ -16,6 +16,7 @@ export default function Header() {
             <div className="flex gap-2 md:order-2 items-center">
                 <Button className="w-12 h-10 hidden sm:inline" color="gray" pill><FaMoon /></Button>
                 <Link to='/signin'><Button gradientDuoTone='purpleToBlue' outline >Sign In</Button></Link>
+                <Link to='/signup'><Button gradientDuoTone='purpleToBlue' outline >Sign Up</Button></Link>
                 <Navbar.Toggle />
             </div>
             <Navbar.Collapse>
