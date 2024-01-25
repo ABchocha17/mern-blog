@@ -14,13 +14,13 @@ export default function Dashboad() {
         }
     },[location.search])
     return (
-        <div className='flex flex-col md:flex-row min-h-[69vh]'>
+        <div className='flex flex-col md:flex-row'>
             {/* side bar */}
             <div className="">
                 <DashSidebar />
             </div>
             {/* profile */}
-            <div className="p-10">
+            <div className="px-10 py-24 flex-1">
                 {tab === 'profile' && <DashProfile />}
             </div>
         </div>  

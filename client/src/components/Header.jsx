@@ -27,7 +27,7 @@ export default function Header() {
                             <p className="text-sm">@{currentUser.rest.username}</p>
                             <p className="text-sm font-medium">{currentUser.rest.email}</p>
                         </Dropdown.Header>
-                        <Link to={"/dashboard?tab=profile"}>
+                        <Link to={"/dashboad?tab=profile"}>
                             <Dropdown.Item>Profile</Dropdown.Item>
                         </Link>
                         <Dropdown.Divider />
