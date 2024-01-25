@@ -7,6 +7,7 @@ import Signin from "./pages/Signin";
 import Signup from "./pages/Signup";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import PrivetRoute from "./components/PrivetRoute";
 
 export default function App() {
   return (
@@ -15,7 +16,9 @@ export default function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/dashboad" element={<Dashboad />} />
+        <Route element={<PrivetRoute />}>
+          <Route path="/dashboad" element={<Dashboad />} />
+        </Route>
         <Route path="/about" element={<About />} />
         <Route path="/signin" element={<Signin />} />
         <Route path="/projects" element={<Projects />} />
